@@ -5,5 +5,6 @@ def squares(start, end):
         squares.append(square)
     return squares
 
+
 if "__main__" == __name__:
-    print(squares(1,11))
+    print(squares(1, 11))

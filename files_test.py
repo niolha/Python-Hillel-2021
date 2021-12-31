@@ -1,6 +1,6 @@
 import os
 
-def get_names():
+def get_names(path):
     for root, directories, files in os.walk(path, topdown=True):
         for name in files:
             print(os.path.join(root, name))
@@ -8,8 +8,7 @@ def get_names():
             print(os.path.join(root, name))
 
 
-
 if __name__ == "__main__":
     path = '/Users/olgazienovieva/Documents/projects/Python-Hillel/Python-Hillel-2021'
-    get_names()
+    get_names(path)
     

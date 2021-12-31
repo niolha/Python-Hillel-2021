@@ -11,4 +11,3 @@ def get_names(path):
 if __name__ == "__main__":
     path = '/Users/olgazienovieva/Documents/projects/Python-Hillel/Python-Hillel-2021'
     get_names(path)
-    

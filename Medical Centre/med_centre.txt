@@ -1,0 +1,48 @@
+patient
+-----
+id: INT IDENTITY PK
+name: VARCHAR(64)
+surname: VARCHAR(64)
+genger: VARCHAR(64)
+dirth_date: DATE
+address: VARCHAR(256)
+
+
+doctor
+-----
+id: int IDENTITY PK
+name: VARCHAR(64)
+Surname: VARCHAR(64)
+
+
+symptom
+-----
+id: INT IDENTITY PK
+name: VARCHAR(64)
+
+
+diagnosis
+-----
+id: INT IDENTITY PK
+name: VARCHAR(64)
+
+
+medication
+-----
+id INT IDENTITY PK
+name VARCHAR(64)
+how_to_use VARCHAR(256)
+effect: TEXT
+side_effect: TEXT
+
+
+checkup
+-----
+id: INT IDENTITY PK
+doctor_id: FK >- doctor.id
+patient_id: FK >- patient.id
+place: VARCHAR(256)
+date: DATETIME
+sypmptom_id: FK >- symptom.id
+diagnosis_id: FK >- diagnosis.id
+medication_id: FK >- medication.id
